@@ -3,6 +3,7 @@ import styles from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import AuthLinks from "../authLinks/AuthLinks";
+import ThemeToggle from "../themeToggle/ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -15,6 +16,7 @@ const Navbar = () => {
       </div>
       <div className={styles.logo}>SantyBlog</div>
       <div className={styles.links}>
+        <ThemeToggle />
         <Link href="/">Homepage</Link>
         <Link href="/">Contact</Link>
         <Link href="/">About</Link>
