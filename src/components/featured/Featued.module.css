@@ -43,7 +43,7 @@
 
 .button {
   padding: 16px 20px;
-  bottom: none;
+  border: none;
   border-radius: 5px;
   width: max-content;
 }
