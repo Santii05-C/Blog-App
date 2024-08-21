@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./menuCategories.module.css";
 
 const MenuCategories = () => {
   return (
@@ -40,5 +41,5 @@ const MenuCategories = () => {
     </div>
   );
 };
-//1:30
+
 export default MenuCategories;
