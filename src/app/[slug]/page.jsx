@@ -1,6 +1,7 @@
 import Menu from "@/components/Menu/Menu";
 import styles from "./singlePage.module.css";
 import Image from "next/image";
+import Comments from "@/components/comments/Comments";
 
 const SinlgePage = () => {
   return (
@@ -25,7 +26,32 @@ const SinlgePage = () => {
         </div>
       </div>
       <div className={styles.content}>
-        <div className={styles.post}></div>
+        <div className={styles.post}>
+          <div className={styles.description}>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              maxime porro ex voluptate commodi nemo rerum voluptas ea
+              blanditiis consectetur unde nihil cupiditate velit iure, ad
+              impedit qui similique ipsum
+            </p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              maxime porro ex voluptate commodi nemo rerum voluptas ea
+              blanditiis consectetur unde nihil cupiditate velit iure, ad
+              impedit qui similique ipsum
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              maxime porro ex voluptate commodi nemo rerum voluptas ea
+              blanditiis consectetur unde nihil cupiditate velit iure, ad
+              impedit qui similique ipsum
+            </p>
+          </div>
+          <div className={styles.comment}>
+            <Comments />
+          </div>
+        </div>
         <Menu />
       </div>
     </div>
@@ -33,3 +59,4 @@ const SinlgePage = () => {
 };
 
 export default SinlgePage;
+//2:09
