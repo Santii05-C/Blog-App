@@ -1,5 +1,5 @@
 import GithubProvider from "next-auth/providers/github";
-import GlogleProvider from "next-auth/providers/github";
+import GlogleProvider from "next-auth/providers/google";
 
 export const authOptions = {
   providers: [
