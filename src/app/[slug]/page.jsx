@@ -59,4 +59,3 @@ const SinlgePage = () => {
 };
 
 export default SinlgePage;
-//2:09
