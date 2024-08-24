@@ -7,8 +7,9 @@ export const GET = async (req) => {
   const page = searchParams.get("page");
 
   const POST_PER_PAGE = 2;
+
   try {
-    const posts = await prisma.posts.findMany({
+    const posts = await prisma.post.findMany({
       take: POST_PER_PAGE,
       skip: POST_PER_PAGE * (page - 1),
     });
