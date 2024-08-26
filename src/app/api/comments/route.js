@@ -7,7 +7,7 @@ export const GET = async (req) => {
   const postSlug = searchParams.get("postSlug");
 
   try {
-    const comments = await prisma.comment.findUnique({
+    const comments = await prisma.comment.findMany({
       where: {
         ...(postSlug && { postSlug }),
       },
