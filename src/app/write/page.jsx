@@ -6,6 +6,7 @@ import { useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 const WritePage = () => {
   const { status } = useSession();
