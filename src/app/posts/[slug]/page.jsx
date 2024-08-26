@@ -65,4 +65,3 @@ const SinlgePage = async ({ params }) => {
 };
 
 export default SinlgePage;
-//3:20
