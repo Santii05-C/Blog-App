@@ -15,7 +15,9 @@ import {
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
 
-const WritePage = (app) => {
+const storage = getStorage(app);
+
+const WritePage = () => {
   const { status } = useSession();
 
   const router = useRouter();
@@ -30,10 +32,6 @@ const WritePage = (app) => {
 
       const uploadTask = uploadBytesResumable(storageRef, file);
 
-      // Register three observers:
-      // 1. 'state_changed' observer, called any time the state changes
-      // 2. Error observer, called on failure
-      // 3. Completion observer, called on successful completion
       uploadTask.on(
         "state_changed",
         (snapshot) => {
