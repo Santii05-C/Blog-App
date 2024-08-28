@@ -1,15 +1,15 @@
 .container {
-  /* position: relative;
+  position: relative;
   display: flex;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
-/* .select {
+.select {
   margin-bottom: 50px;
   padding: 10px 20px;
   margin-left: 50px;
   width: max-content;
-} */
+}
 
 .editor {
   display: flex;
